@@ -2,7 +2,7 @@ var count = $('.content-image *').length;
 
 var current = 1;
 
-$('.content-image img').animate({'marginLeft': 0}, 200);
+// $('.content-image img').animate({'marginLeft': 0}, 200);
 
 if (count<2) 
   {
@@ -43,9 +43,11 @@ $('.next').click(function(){
   
   if ($(this).attr('class') == 'next yes')
     {
-      $('.slider').animate({'marginTop': ['-=500', 'swing']}, 300);
-
       current++;
+
+      $('.content-image img').css({'zIndex': 0})
+
+      $('.'+current).animate({'marginLeft': 0}, 300).css({'zIndex': 1});
 
       nextDriver();
     }
@@ -61,7 +63,8 @@ $('.prev').click(function(){
 
   if ($(this).attr('class') == 'prev yes')
     {
-      $('.slider').animate({'marginTop': ['+=500', 'swing']}, 300);
+
+      $('.'+current).animate({'marginLeft': '-660px'}, 300).css({'zIndex': 1});
 
       current--;
 

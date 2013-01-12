@@ -9,11 +9,7 @@ $('document').ready(function(){
 		var name = $(this).attr('name');
 
 		function contentSwitch() {
-	      $('#area').animate({'opacity': 0}, 300, function(){
-	        $(this).load('ajax/' + name + '.html', function(){
-	          $(this).animate({'opacity': [1, 'swing']}, 300);
-	        });
-	      }); 
+			$('#area').load('ajax/' + name + '.html');
 	    } 
 
 	    contentSwitch();

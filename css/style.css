@@ -64,6 +64,7 @@ div:hover {
 	margin: 0 0 0 1px;
 	padding: 40px 0 0 30px;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .nav-item.active, .nav-item:hover {
@@ -84,9 +85,16 @@ div:hover {
 	height: 500px;
 	float: left;
 	overflow: hidden;
+	margin: 0 0 0 301px;
+	position: absolute;
+}
+#area:hover .controls {
+	display: block;
 }
 .content-image img {
 	margin:0 0 0 -660px;
+	position: absolute;
+	z-index: 0;
 }
 .message {
 	font-size:  65px;
@@ -95,6 +103,7 @@ div:hover {
 	font-weight: bold;
 	padding: 20px 30px;
 	line-height: 55px;
+	z-index: 2;
 }
 .bottom-content {
 	width: 299px;
@@ -159,11 +168,42 @@ div:hover {
 	background-color:  #000000;
 	opacity: .9;
 	padding:15px;
+	margin:437px 0 0 546px;
+	z-index: 2;
+	display:none;
 }
 .current, .total, .control-text {
 	float:left;
 	color: #ffffff;
-	margin:0 2px;
+	margin: 3px 2px 0 2px;
+}
+.next, .prev {
+	width: 27px;
+	height: 23px;
+	float:left;
+	cursor: pointer;
+}
+.no {
+	opacity: .2;
+	cursor: auto;
+}
+.next {
+	background-image: url('../images/right.png');
+	margin:0 0 0 20px;
+}
+
+.prev {
+	background-image: url('../images/left.png');
+	margin:0 20px 0 0;
+
+}
+.next:hover, .prev:hover, .current:hover, .total:hover, .control-text:hover, .controls:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+#first {
+	margin-left:0;
+	z-index: 1;
 }
 
 

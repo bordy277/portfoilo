@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	font-family: helvetica; 
 	color: #222222;
+	font-size: 14px;
 }
 h1 {
 	font-size: 36px;
@@ -12,11 +13,27 @@ h2 {
 	font-size: 18px;
 	margin: 0 0 15px 0;
 	color: #888888;
+	font-style: italic;
 }
 p {
 	font-size: 14px;
 	margin: 0 0 15px 0;
 	line-height: 20px;
+}
+ul {
+	padding:0;
+	list-style-type: none;
+}
+a, a:visited {
+	color: #009999;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+div:hover {
+	background-color: #ffffff;
+	color:#222222;
 }
 .clear {
 	clear: both;
@@ -28,11 +45,17 @@ p {
 .center {
 	width: 960px;
 	margin: auto;
+	background-color: #ffffff;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
 }
 .logo {
 	width: 300px;
-	height: 100px;
+	height: 80px;
 	float: left;
+	padding: 20px 0 0 0;
+	font-size: 40px;
+	font-weight: bold;
 }
 .nav-item {
 	width: 134px;
@@ -42,7 +65,7 @@ p {
 	padding: 40px 0 0 30px;
 	font-weight: bold;
 }
-.nav-item.active {
+.active, .nav-item:hover {
 	background-color: #222222; 
 	color: #ffffff;
 }
@@ -69,7 +92,75 @@ p {
 	padding: 20px 30px;
 	line-height: 55px;
 }
+.bottom-content {
+	width: 299px;
+	height: 270px;
+	padding: 15px;
+	background-color: #222222;
+	float: left;
+	margin: 0 0 0 1px;
+	color: #ffffff;
+}
+.bottom-content.small {
+	width: 270px;
+	margin: 0;
+}
+.center.footer {
+	height: 100px;
+	margin: 15px auto 0;
+}
+.copyright-text {
+	font-size: 11px;
+	float: right;
+}
+.social {
+	float: left;
+}
+.outer.grey {
+	background-color: #222222;
+}
+.black2 {
+	display: none;
+}
+.white2 {
+	display: block;
+}
+.small:hover .black2 {
+	display: block;
+}
+.small:hover .white2 {
+	display: none;
+}
+.ss-icon {
+	margin:0 10px 0 0;
+	font-size: 20px;
+	float: left;
+}
+.contact a, .contact a:hover, .contact a:visited { 
+	color: #ffffff;
+}
+ .contact:hover a, .contact:hover a:hover, .contact:hover a:visited { 
+	color: #222222;
+}
+.contact a {
+	margin:-3px 0 0 0;
+	display: block;
+	float: left;
+	font-size: 18px;
+}
 
+
+
+
+
+
+
+
+
+.flag {float:right; width:36px; height:18px; margin:0 0 0 10px;}
+.blue {width:15px; height:10px; background-color:#182750; float:left;}
+.red {height:2px; background-color: #a21b21;}
+.white {height:2px; background-color: #f5eccd;}
 
 
 

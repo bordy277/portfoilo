@@ -20,10 +20,13 @@ p {
 	margin: 0 0 15px 0;
 	line-height: 20px;
 }
+<<<<<<< HEAD
 ul {
 	padding:0;
 	list-style-type: none;
 }
+=======
+>>>>>>> 88a81d764366046b7bf229b8de65dbc41f881979
 a, a:visited {
 	color: #009999;
 	text-decoration: none;
@@ -65,7 +68,11 @@ div:hover {
 	padding: 40px 0 0 30px;
 	font-weight: bold;
 }
+<<<<<<< HEAD
 .active, .nav-item:hover {
+=======
+.nav-item.active, .nav-item:hover {
+>>>>>>> 88a81d764366046b7bf229b8de65dbc41f881979
 	background-color: #222222; 
 	color: #ffffff;
 }
@@ -99,7 +106,10 @@ div:hover {
 	background-color: #222222;
 	float: left;
 	margin: 0 0 0 1px;
+<<<<<<< HEAD
 	color: #ffffff;
+=======
+>>>>>>> 88a81d764366046b7bf229b8de65dbc41f881979
 }
 .bottom-content.small {
 	width: 270px;
@@ -131,6 +141,7 @@ div:hover {
 .small:hover .white2 {
 	display: none;
 }
+<<<<<<< HEAD
 .ss-icon {
 	margin:0 10px 0 0;
 	font-size: 20px;
@@ -148,6 +159,8 @@ div:hover {
 	float: left;
 	font-size: 18px;
 }
+=======
+>>>>>>> 88a81d764366046b7bf229b8de65dbc41f881979
 
 
 

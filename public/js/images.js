@@ -47,7 +47,7 @@ $('.next').click(function(){
 
       $('.content-image img').css({'zIndex': 0})
 
-      $('.'+current).animate({'marginLeft': 0}, 300).css({'zIndex': 1});
+      $('.'+current).animate({'marginLeft': [0, 'easeInOutExpo']}, 500).css({'zIndex': 1});
 
       nextDriver();
     }
@@ -64,7 +64,7 @@ $('.prev').click(function(){
   if ($(this).attr('class') == 'prev yes')
     {
 
-      $('.'+current).animate({'marginLeft': '-660px'}, 300).css({'zIndex': 1});
+      $('.'+current).animate({'marginLeft': ['-690px', 'easeInOutExpo']}, 500).css({'zIndex': 1});
 
       current--;
 

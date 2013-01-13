@@ -92,9 +92,13 @@ div:hover {
 	display: block;
 }
 .content-image img {
-	margin:0 0 0 -660px;
+	margin-left:-690px;
 	position: absolute;
 	z-index: 0;
+	width: 100%;
+	box-shadow: 0 0 30px #000000;
+	-moz-box-shadow: 0 0 30px #000000;
+	-webkit-box-shadow: 0 0 30px #000000;
 }
 .message {
 	font-size:  65px;
@@ -130,7 +134,7 @@ div:hover {
 	float: left;
 }
 .outer.grey {
-	background-color: #111111;
+	background-color: #222222;
 }
 .black2 {
 	display: none;
@@ -205,9 +209,40 @@ div:hover {
 	margin-left:0;
 	z-index: 1;
 }
-
-
-
+.mnwhite, .mnblack {
+	float:left; 
+	margin:-10px 7px 0 0;
+}
+.mnblack {
+	display: none;
+}
+.mnwhite {
+	display: block;
+}
+.contact:hover .mnwhite {
+	display: none;
+}
+.contact:hover .mnblack {
+	display: block;
+}
+.work-item {
+	cursor: pointer;
+	padding:10px;
+}
+.work-item.active, .work-item:hover {
+	color:#ffffff;
+	background-color: #009999;
+	padding:10px;
+}
+.resume-content {
+	height: 470px;
+	width: 629px;
+	background-color: #222222;
+	color: #ffffff;
+	padding: 15px;
+	position: absolute;
+	margin: 0 0 0 301px;
+}
 
 
 

@@ -12,13 +12,16 @@ h1 {
 h2 {
 	font-size: 18px;
 	margin: 0 0 15px 0;
-	color: #888888;
+	color: #009999;
 	font-style: italic;
 }
 p {
 	font-size: 14px;
 	margin: 0 0 15px 0;
 	line-height: 20px;
+}
+.work p {
+	color: #009999;
 }
 ul {
 	padding:0;
@@ -227,12 +230,13 @@ div:hover {
 }
 .work-item {
 	cursor: pointer;
-	padding:10px;
+	padding:5px 15px;
+	margin: 0 -15px;
+	width: 270px;
 }
 .work-item.active, .work-item:hover {
 	color:#ffffff;
 	background-color: #009999;
-	padding:10px;
 }
 .resume-content {
 	height: 470px;

@@ -1,32 +1,30 @@
-function initializeFunction() {
-	$('document').ready(function(){
+$('document').ready(function(){
+	
+    $('.nav-item').click(function(){
 
-	    $('.nav-item').click(function(){
+    	$('.nav-item').removeClass('active');
+	    $(this).addClass('active');
 
-	    	$('.nav-item').removeClass('active');
-		    $(this).addClass('active');
+		var name = $(this).attr('name');
 
-			var name = $(this).attr('name');
+		function contentSwitch() {
+			$('#area').load('ajax/' + name + '.html');
+	    } 
 
-			function contentSwitch() {
-				$('#area').load('ajax/' + name + '.html');
-		    } 
-
-		    contentSwitch();
-
-		});
-
-		$('.work-item').click(function(){
-
-			var name = $(this).attr('name');
-
-			function contentSwitch() {
-				$('#area').load('ajax/' + name + '.html');
-		    } 
-
-		    contentSwitch();
-
-		});
+	    contentSwitch();
 
 	});
-}
+
+	$('.work-item').click(function(){
+
+		var name = $(this).attr('name');
+
+		function contentSwitch() {
+			$('#area').load('ajax/' + name + '.html');
+	    } 
+
+	    contentSwitch();
+
+	});
+
+});

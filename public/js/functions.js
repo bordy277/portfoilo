@@ -1,30 +1,33 @@
-$('document').ready(function(){
+function initializeFunction() { 
 	
-    $('.nav-item').click(function(){
+	$('document').ready(function(){
 
-    	$('.nav-item').removeClass('active');
-	    $(this).addClass('active');
+	    $('.nav-item').click(function(){
 
-		var name = $(this).attr('name');
+	    	$('.nav-item').removeClass('active');
+		    $(this).addClass('active');
 
-		function contentSwitch() {
-			$('#area').load('ajax/' + name + '.html');
-	    } 
+			var name = $(this).attr('name');
 
-	    contentSwitch();
+			function contentSwitch() {
+				$('#area').load('ajax/' + name + '.html');
+		    } 
+
+		    contentSwitch();
+
+		});
+
+		$('.work-item').click(function(){
+
+			var name = $(this).attr('name');
+
+			function contentSwitch() {
+				$('#area').load('ajax/' + name + '.html');
+		    } 
+
+		    contentSwitch();
+
+		});
 
 	});
-
-	$('.work-item').click(function(){
-
-		var name = $(this).attr('name');
-
-		function contentSwitch() {
-			$('#area').load('ajax/' + name + '.html');
-	    } 
-
-	    contentSwitch();
-
-	});
-
-});
+}

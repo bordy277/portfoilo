@@ -35,16 +35,16 @@ function initializeFunction() {
       
 
 	    function thing() {
-            $('#front-images').animate({'opacity': [0, 'swing']}, 100, function(){
+            $('#front-images').animate({'opacity': [0, 'swing']}, 1000, function(){
 				if (i== theImages.length){
 					i = 0; 
 				}
                 $('#front-images').html(theImages[i++]);
             });
-            $('#front-images').animate({'opacity': 1}, 250)
+            $('#front-images').animate({'opacity': 1}, 1000)
         }
 	    function change() {
-	        setInterval(thing, 5000);
+	        setInterval(thing, 10000);
 	    }
 
 	    change();

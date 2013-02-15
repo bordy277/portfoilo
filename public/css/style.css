@@ -182,21 +182,22 @@ div:hover {
 /* images */
 .controls {
 	position: absolute;
-	background-color:  #000000;
+	background-color:  #ffffff;
+	color: #000000;
 	opacity: .9;
-	padding:15px;
-	margin:437px 0 0 546px;
+	padding:10px;
+	margin:437px 0 0 562px;
 	z-index: 2;
 	display:none;
 }
 .current, .total, .control-text {
 	float:left;
-	color: #ffffff;
+	color: #000000;
 	margin: 3px 2px 0 2px;
 }
 .next, .prev {
-	width: 27px;
-	height: 23px;
+	width: 15px;
+	height: 15px;
 	float:left;
 	cursor: pointer;
 }
@@ -215,8 +216,8 @@ div:hover {
 
 }
 .next:hover, .prev:hover, .current:hover, .total:hover, .control-text:hover, .controls:hover {
-	background-color: #000000;
-	color: #ffffff;
+	background-color: #ffffff;
+	color: #000000;
 }
 #first {
 	margin-left:0;

@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: helvetica; 
-	color: #222222;
+	color: #101010;
 	font-size: 14px;
 }
 h1 {
@@ -36,7 +36,7 @@ a:hover {
 }
 div:hover {
 	background-color: #ffffff;
-	color:#222222;
+	color:#101010;
 }
 .clear {
 	clear: both;
@@ -71,14 +71,14 @@ div:hover {
 }
 
 .nav-item.active, .nav-item:hover {
-	background-color: #222222; 
+	background-color: #101010; 
 	color: #ffffff;
 }
 .content {
 	width: 270px;
 	height: 470px;
 	padding: 15px;
-	background-color: #222222;
+	background-color: #101010;
 	color: #ffffff;
 	float: left;
 	margin: 0 1px 0 0;
@@ -86,7 +86,7 @@ div:hover {
 .content-me {
 	width: 629px;
 	height: 470px;
-	background-color: #222222;
+	background-color: #101010;
 	color: #ffffff;
 	float: left;
 	margin: 0 0 0 301px;
@@ -126,7 +126,7 @@ div:hover {
 	width: 299px;
 	height: 270px;
 	padding: 15px;
-	background-color: #222222;
+	background-color: #101010;
 	float: left;
 	margin: 0 0 0 1px;
 	color: #ffffff;
@@ -147,7 +147,7 @@ div:hover {
 	float: left;
 }
 .outer.grey {
-	background-color: #222222;
+	background-color: #101010;
 }
 .black2 {
 	display: none;
@@ -170,7 +170,7 @@ div:hover {
 	color: #ffffff;
 }
  .contact:hover a, .contact:hover a:hover, .contact:hover a:visited, .friends:hover a, .friends:hover a:hover, .friends:hover a:visited { 
-	color: #222222;
+	color: #101010;
 }
 .contact a, .friends a {
 	margin:-3px 0 0 0;
@@ -252,7 +252,7 @@ div:hover {
 .resume-content {
 	height: 470px;
 	width: 629px;
-	background-color: #222222;
+	background-color: #101010;
 	color: #ffffff;
 	padding: 15px;
 	position: absolute;

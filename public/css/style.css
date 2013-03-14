@@ -94,7 +94,7 @@ div:hover {
 }
 .content-image {
 	width: 659px;
-	height: 500px;
+	height: 499px;
 	float: left;
 	overflow: hidden;
 	margin: 0 0 0 301px;
@@ -107,7 +107,6 @@ div:hover {
 	margin-left:-690px;
 	position: absolute;
 	z-index: 0;
-	width: 100%;
 	box-shadow: 0 0 30px #000000;
 	-moz-box-shadow: 0 0 30px #000000;
 	-webkit-box-shadow: 0 0 30px #000000;

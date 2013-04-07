@@ -34,10 +34,6 @@ a, a:visited {
 a:hover {
 	text-decoration: underline;
 }
-div:hover {
-	background-color: #ffffff;
-	color:#101010;
-}
 .clear {
 	clear: both;
 }
@@ -46,6 +42,7 @@ div:hover {
 	margin: 0 0 1px 0;
 }
 .center {
+	position: relative;
 	width: 960px;
 	margin: auto;
 	background-color: #ffffff;
@@ -60,11 +57,6 @@ div:hover {
 	font-weight: bold;
 }
 .nav-item {
-	width: 134px;
-	height: 60px;
-	float: right;
-	margin: 0 0 0 1px;
-	padding: 40px 0 0 30px;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -74,13 +66,16 @@ div:hover {
 	color: #ffffff;
 }
 .content {
-	width: 270px;
-	height: 470px;
+	width: 240px;
 	padding: 15px;
 	background-color: #101010;
 	color: #ffffff;
 	float: left;
-	margin: 0 1px 0 0;
+	margin: 0 30px 0 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
 }
 .content-me {
 	width: 629px;
@@ -88,17 +83,22 @@ div:hover {
 	background-color: #101010;
 	color: #ffffff;
 	float: left;
-	margin: 0 0 0 301px;
-	position: absolute;
 	padding: 15px;
+	margin: 0 0 0 300px;
+}
+.content-description {
+	width: 659px;
+	padding: 15px 0 0 0;
+	float: left;
+	margin: 0 0 30px 300px;
+	color: #000000;
 }
 .content-image {
 	width: 659px;
 	height: 499px;
 	float: left;
 	overflow: hidden;
-	margin: 0 0 0 301px;
-	position: absolute;
+	margin: 0 0 0 300px;
 }
 #area:hover .controls {
 	display: block;
@@ -106,11 +106,11 @@ div:hover {
 .content-image img {
 	margin-left:-690px;
 	position: absolute;
-	z-index: 0;
+	z-index: 0;/*
 	box-shadow: 0 0 30px #000000;
 	-moz-box-shadow: 0 0 30px #000000;
 	-webkit-box-shadow: 0 0 30px #000000;
-}
+*/}
 .message {
 	font-size:  65px;
 	color: #ffffff;
@@ -121,21 +121,22 @@ div:hover {
 	z-index: 2;
 }
 .bottom-content {
-	width: 299px;
-	height: 270px;
-	padding: 15px;
-	background-color: #101010;
+	width: 314px;
+	margin: 30px 0;
 	float: left;
-	margin: 0 0 0 1px;
-	color: #ffffff;
+	color: #000000;
+}
+.bottom-area {
+	float: left;
+	width: 659px;
+	margin: 30px 0 0 300px;
 }
 .bottom-content.small {
 	width: 270px;
 	margin: 0;
 }
-.center.footer {
-	height: 100px;
-	margin: 15px auto 0;
+.footer {
+	padding: 50px 0 15px;
 }
 .copyright-text {
 	font-size: 11px;
@@ -144,31 +145,13 @@ div:hover {
 .social {
 	float: left;
 }
-.outer.grey {
-	background-color: #101010;
-}
-.black2 {
-	display: none;
-}
-.white2 {
-	display: block;
-}
-.small:hover .black2 {
-	display: block;
-}
-.small:hover .white2 {
-	display: none;
-}
 .ss-icon {
 	margin:0 10px 0 0;
 	font-size: 20px;
 	float: left;
 }
 .contact a, .contact a:hover, .contact a:visited, .friends a, .friends a:hover, .friends a:visited  { 
-	color: #ffffff;
-}
- .contact:hover a, .contact:hover a:hover, .contact:hover a:visited, .friends:hover a, .friends:hover a:hover, .friends:hover a:visited { 
-	color: #101010;
+	color: #000000;
 }
 .contact a, .friends a {
 	margin:-3px 0 0 0;
@@ -225,12 +208,6 @@ div:hover {
 	float:left; 
 	margin:-10px 7px 0 0;
 }
-.mnblack {
-	display: none;
-}
-.mnwhite {
-	display: block;
-}
 .contact:hover .mnwhite {
 	display: none;
 }
@@ -253,8 +230,8 @@ div:hover {
 	background-color: #101010;
 	color: #ffffff;
 	padding: 15px;
-	position: absolute;
-	margin: 0 0 0 301px;
+	float: left;
+	margin: 0 0 0 300px;
 }
 
 .res-col {

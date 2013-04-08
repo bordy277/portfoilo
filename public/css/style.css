@@ -7,7 +7,9 @@ body {
 }
 h1 {
 	font-size: 36px;
-	margin: 0 0 0 0;
+	margin: 0 0 10px 0;
+	padding:0 0 15px 0;
+	border-bottom: 1px dotted #101010;
 }
 h2 {
 	font-size: 18px;
@@ -17,7 +19,7 @@ h2 {
 }
 p {
 	font-size: 14px;
-	margin: 0 0 15px 0;
+	margin: 15px 0;
 	line-height: 20px;
 }
 .work p {
@@ -44,6 +46,7 @@ a:hover {
 .center {
 	position: relative;
 	width: 960px;
+	height: 100%;
 	margin: auto;
 	background-color: #ffffff;
 	border-left: 1px solid #ffffff;
@@ -56,9 +59,14 @@ a:hover {
 	font-size: 32px;
 	font-weight: bold;
 }
+.nav {
+	margin:0 0 30px 0;
+}
 .nav-item {
 	font-weight: bold;
 	cursor: pointer;
+	padding: 20px 0;
+	border-bottom: 1px dotted #ffffff;
 }
 
 .nav-item.active, .nav-item:hover {
@@ -79,11 +87,8 @@ a:hover {
 }
 .content-me {
 	width: 629px;
-	height: 470px;
-	background-color: #101010;
-	color: #ffffff;
+	color: #101010;
 	float: left;
-	padding: 15px;
 	margin: 0 0 0 300px;
 }
 .content-description {
@@ -91,7 +96,7 @@ a:hover {
 	padding: 15px 0 0 0;
 	float: left;
 	margin: 0 0 30px 300px;
-	color: #000000;
+	color: #101010;
 }
 .content-image {
 	width: 659px;
@@ -99,6 +104,7 @@ a:hover {
 	float: left;
 	overflow: hidden;
 	margin: 0 0 0 300px;
+	position: relative;
 }
 #area:hover .controls {
 	display: block;
@@ -107,9 +113,9 @@ a:hover {
 	margin-left:-690px;
 	position: absolute;
 	z-index: 0;/*
-	box-shadow: 0 0 30px #000000;
-	-moz-box-shadow: 0 0 30px #000000;
-	-webkit-box-shadow: 0 0 30px #000000;
+	box-shadow: 0 0 30px #101010;
+	-moz-box-shadow: 0 0 30px #101010;
+	-webkit-box-shadow: 0 0 30px #101010;
 */}
 .message {
 	font-size:  65px;
@@ -122,9 +128,8 @@ a:hover {
 }
 .bottom-content {
 	width: 314px;
-	margin: 30px 0;
 	float: left;
-	color: #000000;
+	color: #101010;
 }
 .bottom-area {
 	float: left;
@@ -136,7 +141,7 @@ a:hover {
 	margin: 0;
 }
 .footer {
-	padding: 50px 0 15px;
+	padding: 50px 0 30px;
 }
 .copyright-text {
 	font-size: 11px;
@@ -151,7 +156,7 @@ a:hover {
 	float: left;
 }
 .contact a, .contact a:hover, .contact a:visited, .friends a, .friends a:hover, .friends a:visited  { 
-	color: #000000;
+	color: #101010;
 }
 .contact a, .friends a {
 	margin:-3px 0 0 0;
@@ -164,16 +169,15 @@ a:hover {
 .controls {
 	position: absolute;
 	background-color:  #ffffff;
-	color: #000000;
+	color: #101010;
 	opacity: .9;
 	padding:10px;
 	margin:437px 0 0 562px;
 	z-index: 2;
-	display:none;
 }
 .current, .total, .control-text {
 	float:left;
-	color: #000000;
+	color: #101010;
 	margin: 3px 2px 0 2px;
 }
 .next, .prev {
@@ -198,7 +202,7 @@ a:hover {
 }
 .next:hover, .prev:hover, .current:hover, .total:hover, .control-text:hover, .controls:hover {
 	background-color: #ffffff;
-	color: #000000;
+	color: #101010;
 }
 #first {
 	margin-left:0;
@@ -218,18 +222,15 @@ a:hover {
 	cursor: pointer;
 	padding:5px 15px;
 	margin: 0 -15px;
-	width: 270px;
+	width: 240px;
 }
 .work-item.active, .work-item:hover {
 	color:#ffffff;
 	background-color: #009999;
 }
 .resume-content {
-	height: 470px;
 	width: 629px;
-	background-color: #101010;
-	color: #ffffff;
-	padding: 15px;
+	color: #101010;
 	float: left;
 	margin: 0 0 0 300px;
 }
@@ -237,6 +238,11 @@ a:hover {
 .res-col {
 	width:209px; 
 	float: left;
+}
+
+.half {
+	float: left;
+
 }
 
 

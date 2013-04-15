@@ -2,6 +2,8 @@ function initializeFunction() {
 	
 	$('document').ready(function(){
 
+		alert('FUNCTION');
+
 	    $('.nav-item').live("click", function(){
 
 	    	$('.nav-item').removeClass('active');

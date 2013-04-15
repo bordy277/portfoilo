@@ -10,12 +10,13 @@ h1 {
 	margin: 0 0 10px 0;
 	padding:0 0 15px 0;
 	border-bottom: 1px dotted #101010;
-	color: #000000;
+	color: #870300;
 }
 h2 {
 	font-size: 18px;
 	margin: 0 0 15px 0;
-	color: #870300;}
+	color: #870300;
+}
 p {
 	font-size: 14px;
 	margin: 15px 0;
@@ -38,7 +39,11 @@ a:hover {
 .clear {
 	clear: both;
 }
-.container {}
+.container {
+}
+.container img {
+	margin: 0 0 30px 0;
+}
 .outer {
 	margin: 0 0 1px 0;
 }
@@ -52,20 +57,19 @@ a:hover {
 	border-right: 1px solid #ffffff;
 }
 .logo {
-	width: 300px;
-	height: 100px;
-	float: left;
+	width: 240px;
+	height: 200px;
 	font-size: 32px;
 	font-weight: bold;
 }
 .nav {
 	margin:0 0 30px 0;
 }
-.nav-item {
-	font-weight: bold;
+.nav-item {/*
+	font-weight: bold;*/
 	cursor: pointer;
-	padding: 20px 0;
-	border-bottom: 1px dotted #ffffff;
+	padding: 10px 0;/*
+	border-bottom: 1px dotted #ffffff;*/
 }
 
 .nav-item.active, .nav-item:hover {
@@ -74,15 +78,14 @@ a:hover {
 }
 .content {
 	width: 240px;
-	padding: 15px;
+	padding: 0 0 0 30px;
 	background-color: #000000;
 	color: #ffffff;
 	float: left;
 	margin: 0 30px 0 0;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
-	left: 0;
 }
 .content-me {
 	width: 629px;
@@ -91,26 +94,28 @@ a:hover {
 	margin: 0 0 0 300px;
 }
 .content-description {
-	width: 659px;
+	width: 660px;
 	float: left;
-	margin: 20px 0 0 300px;
+	margin: 55px 0 0 300px;
 	color: #101010;
 }
 .content-image {
 	width: 659px;
 	height: 499px;
-	float: left;
 	overflow: hidden;
 	margin: 0 0 0 300px;
 	position: relative;
+}
+.images {
+	margin: 0 0 30px 0;
 }
 #area:hover .controls {
 	display: block;
 }
 .content-image img {
 	margin-left:-690px;
-	position: absolute;
-	z-index: 0;/*
+	height: auto;
+	/*z-index: 0;*//*
 	box-shadow: 0 0 30px #101010;
 	-moz-box-shadow: 0 0 30px #101010;
 	-webkit-box-shadow: 0 0 30px #101010;
@@ -128,6 +133,8 @@ a:hover {
 	width: 314px;
 	float: left;
 	color: #101010;
+	margin: 0 0 200px 0;/*
+	border-top: 1px dotted #101010;*/
 }
 .bottom-area {
 	float: left;
@@ -153,8 +160,11 @@ a:hover {
 	font-size: 20px;
 	float: left;
 }
-.contact a, .contact a:hover, .contact a:visited, .friends a, .friends a:hover, .friends a:visited  { 
-	color: #101010;
+.contact a, .contact { 
+	color: #000;
+}
+.friends a, .friends {
+	color: #000;
 }
 .contact a, .friends a {
 	margin:-3px 0 0 0;
@@ -170,7 +180,7 @@ a:hover {
 	color: #101010;
 	opacity: .9;
 	padding:10px;
-	margin:672px 0 0 562px;
+	margin:675px 0 0 562px;
 	z-index: 2;
 }
 .current, .total, .control-text {
@@ -210,9 +220,6 @@ a:hover {
 	float:left; 
 	margin:-10px 7px 0 0;
 }
-.contact:hover .mnwhite {
-	display: none;
-}
 .contact:hover .mnblack {
 	display: block;
 }
@@ -220,11 +227,11 @@ a:hover {
 	cursor: pointer;
 	padding:5px 15px;
 	margin: 0 -15px;
-	width: 240px;
+	width: 225px
 }
 .work-item.active, .work-item:hover {
-	color:#ffffff;
-	background-color: #870300;
+	color:#870300;
+	background-color: #000;
 }
 .resume-content {
 	width: 629px;
@@ -236,12 +243,18 @@ a:hover {
 .res-col {
 	width:209px; 
 	float: left;
+	margin: 0 0 0 125px;
 }
 
-.half {
+.education {
 	float: left;
 
 }
+.employment {
+	float: right;
+	margin: 0 0 0 252px;
+}
+
 
 
 

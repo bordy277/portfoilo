@@ -86,6 +86,10 @@ a:hover {
 	position: fixed;
 	top: 0;
 	bottom: 0;
+	box-shadow: 0 0 15px #444;
+	-moz-box-shadow: 0 0 15px #444;
+	-webkit-box-shadow: 0 0 15px #444;
+
 }
 .content-me {
 	width: 629px;

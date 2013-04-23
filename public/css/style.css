@@ -106,7 +106,6 @@ a:hover {
 .content-image {
 	width: 659px;
 	height: 499px;
-	overflow: hidden;
 	margin: 0 0 0 300px;
 	position: relative;
 }

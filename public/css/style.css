@@ -17,6 +17,7 @@ h2 {
 p {
 	color: #000;
 	font-size: 13px;
+	text-align: justify;
 }
 a {
 	color: #000;
@@ -107,6 +108,7 @@ a:hover {
 	float: left;
 	position: relative;
 	cursor: pointer;
+	display: block;
 }
 .middle {
 	background-color: #fff;
@@ -116,6 +118,7 @@ a:hover {
 	float: left;
 	position: relative;
 	cursor: pointer;
+	display: block;
 }
 .right {
 	background-color: #fff;
@@ -125,6 +128,7 @@ a:hover {
 	float: left;
 	position: relative;
 	cursor: pointer;
+	display: block;
 }
 .footer {
 	margin: 150px 0 0 0;
@@ -161,6 +165,7 @@ a:hover {
 .blue {width:15px; height:10px; background-color:#182750; float:left;}
 .red {height:2px; background-color: #a21b21;}
 .white {height:2px; background-color: #f5eccd;}
+
 
 .oven {
 	background-image: url('../images/x.jpg');
@@ -216,7 +221,6 @@ a:hover {
 .misc:hover {
 	background-image: url('../images/misc.jpg');
 }
-
 
 
 

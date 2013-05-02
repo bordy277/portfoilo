@@ -1,0 +1,3 @@
+[submodule "public/earthworks"]
+	path = public/earthworks
+	url = git://github.com/bordy277/earthworks.git

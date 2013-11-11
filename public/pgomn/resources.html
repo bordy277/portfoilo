@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>PGOMN</title>
+
+		<link rel="icon" type="image/png" href="images/icon.png">
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+		<script type="text/javascript" src="js/functions.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="leaflet-0.6.4/leaflet.css" />
+
+		<link rel="stylesheet" href="leaflet-0.6.4/leaflet.ie.css" />
+
+		<script type="text/javascript" src="leaflet-0.6.4/leaflet.js"></script>
+
+		<script type="text/javascript" src="leaflet-0.6.4/leaflet-src.js"></script>
+
+
+		<style type="text/css">
+			@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=e355c861-01b1-495c-8036-0de559396265&fontids=721220,721238,721250");
+			@font-face{
+			font-family:"Avenir LT W01 35 Light";
+			src:url("Fonts/721220/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix");
+			src:url("Fonts/721220/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix") format("eot"),url("Fonts/721220/c4352a95-7a41-48c1-83ce-d8ffd2a3b118.woff") format("woff"),url("Fonts/721220/3e419b5b-c789-488d-84cf-a64009cc308e.ttf") format("truetype"),url("Fonts/721220/ca038835-1be3-4dc5-ba25-be1df6121499.svg#ca038835-1be3-4dc5-ba25-be1df6121499") format("svg");
+					}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="center">
+			<div class="callout">
+			</div>
+			<div class="search-filter">
+				<div class="filter-row">
+					<a href="winter.html">
+					<div class="filter-button">
+						<img src="images/winter.png" />
+					</div>
+				</a>
+					<div class="filter-button">
+						<img src="images/parks.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/fall.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/animals.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/city.png" />
+					</div>
+				</div>
+				<div class="filter-row">
+					<div class="filter-button">
+						<img src="images/trees.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/camping.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/lakes.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/free.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/summer.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu-panel">
+			<div class="panel-top">
+				<p style="float:left; font-size:20px; color: #f3797a;padding:25px 0 0 0;">Menu Options</p>
+				<div class="menu" style="float: right;">
+				</div>
+			</div>	
+			<div class="clear">
+			</div>
+			<div class="divide">
+			</div>
+
+			<div class="panel-search">
+				<img src="images/panel-search.png" />
+			</div>
+			<div class="small-filter">
+				<img src="images/small-filter.png" />
+			</div>
+			<div class="divide">
+			</div>
+				<a href="map.html">	
+					<div class="panel-tab">
+						<img src="images/panel-map.png" />
+					</div>	
+				</a>
+
+			<div class="divide">
+			</div>
+
+				<a href="gallery.html">	
+					<div class="panel-tab">
+						<img src="images/panel-gallery.png" />
+					</div>	
+				</a>
+
+			<div class="divide">
+			</div>
+
+				<a href="discover.html">	
+					<div class="panel-tab">
+						<img src="images/panel-discover.png" />
+					</div>	
+				</a>
+
+			<div class="divide">
+			</div>
+
+				<a href="resources.html">	
+					<div class="panel-tab">
+						<img src="images/panel-resources.png" />
+					</div>	
+				</a>
+
+			<div class="divide">
+			</div>	
+			
+		</div>
+
+		
+
+		<div class="header">
+			<div class="center">
+				<div class="menu">
+				</div>
+				<a href="home.html">
+					<div class="logo">
+						<img src="images/logo.png" />
+						
+					</div>
+					<div class="logo-small">
+						<img src="images/logo-small.png" />
+					</div>
+				</a>	
+				<div class="profile-small">
+				</div>
+				<a href="map.html">	
+					<div class="map-tab">
+						<img src="images/map_icon.png" />
+					</div>	
+				</a>	
+				<a href="gallery.html">	
+					<div class="gallery-tab">
+						<img src="images/gallery_icon.png" />
+					</div>
+				</a>	
+				<a href="discover.html">	
+					<div class="discover-tab">
+						<img src="images/discover_icon.png" />
+					</div>
+				</a>	
+				<a href="resources.html">	
+					<div class="resources-tab">
+						<img src="images/resources_icon.png" />
+					</div>
+				</a>	
+					<div class="profile">
+					</div>
+
+					<div class="search">
+						<img src="images/search.png" />
+					</div>
+			</div>
+		</div>
+
+		<div class="content">
+
+			<div class="resources">
+				<div class="title">
+					<div class="center">
+						FAQ and Downloads
+					</div>
+				</div>
+				<div class="center">
+					
+
+					<div class="source-column">
+						<type style="color:#a0d39d;">Filters</type>
+						</br>
+						</br>
+						 &#8226; The ABCs of Getting Outdoors
+						</br>
+						</br>
+						 &#8226; Local Programs & Events
+						</br>
+						</br>
+						 &#8226; Listof Clubs/Organizations
+						</br>
+						</br>
+						 &#8226; Info for Volunteers and/Interns
+						</br>
+						</br>
+						<div class="reports">
+							&#8226; Annual Reports
+						</div>	
+						</br>
+						<div class="reports-links">
+						</br>
+							2009 Annual Reports<br>
+							2009 IRS 990 Form<br>
+							2010 Annual Report<br>
+						</br>
+						</div>
+						</br>
+						<div class="donations">
+							 &#8226; Donations
+						</div>
+						<div class="donations-links">
+							
+						<br>
+							List of Our Donors<br>
+							Project Go Partners<br>
+							How to Donate<br>
+							
+						<br>	
+						</div>	
+						</br>
+						</br>
+						<div class="news">
+							 &#8226; Newsletters
+						</div>
+						<div class="news-links">
+							
+							<br>
+							March 2009<br>
+							June 2010<br>
+							December 2010<br>
+							December 2011
+						
+						</div>	
+
+
+
+
+					</div>
+
+
+
+
+
+					<div class="faq">
+						<div class="question outdoors">
+							<h3>Q: How can I get my family outdoors?</h3>
+						</div>
+						<div class="answer outdoors">
+							<p>
+								<type style="color:#a0d39d; font-weight:bold">A:</type> Did you know that in a typical week only 6% of children ages 9-13 play outside on their own? Research shows that children spend an average of 8 hours a day in front of the television, computer and other electronic screens. Because of these sedentary indoor lifestyles, it is estimated that in the United States, 2 out of every 10 children are clinically obese.
+							</br>
+							</br>
+								Outdoor play and exploration is essential for healthy development. These activities have been linked to countless health benefits that positively impact the body, mind and soul. Research shows that children who regularly play outdoors in nature develop stronger social skills, creativity and problem solving skills.
+							</br>
+							</br>
+								Today, more and more companies and corporations are inquiring about childhood play experiences as part of the interview process in order to identify candidates who are creative and can effectively face the challenges of the 21st Century.
+							</br>
+							</br>	
+								The more you go outdoors and play with your child, the more likely your child is to develop comfort being outdoors and an appreciation for nature and lifelong outdoor recreation. You can help your child develop a love of the outdoors that will last a lifetime.
+							</br>
+							</br>
+								Here are some resources to help you get your family outdoors:
+							</br>
+							</br>
+								<a href="http://www.mnprojectgo.com/Families/ABCOutdoors.aspx" target="_blank">The ABCs of getting Outdoors. </a>
+							</br>
+							</br>
+								<a href="http://www.mnprojectgo.com/Families/LocalProgram.aspx" target="_blank">Local Programs & Events. </a>
+							</p>	
+						</div>	
+						<div class="question volunteer">
+							<h3>Q:How do you become a leader or volunteer for PGOMN?</h3>
+						</div>
+						<div class="answer volunteer">	
+							<p>
+								<type style="color:#a0d39d; font-weight:bold">A:</type> Here is where our program leaders, volunteers and interns will find all of the forms, information, tutorials and trainings.
+							</br>
+							</br>
+								<a href="http://www.mnprojectgo.com/Leaders/Project%20GO%20Volunteer%20&%20Internship%20Opportunities.pdf" target="_blank">Information on volunteering or internships.</a>
+							</br>
+							</br>
+								<a href="http://www.mnprojectgo.com/Leaders/TutorialPresentation.aspx" target="_blank">Project GO tutorial power point presentations.</a>
+							</br>
+							</br>
+								Access to our NING Network is restricted only to our program leaders and key volunteers. If you wish to access the Project GO NING network for training materials or documents, please click here.
+							</p>	
+						</div>
+						<div class="space">
+						</div>	
+						<div class="question clubs">	
+							<h3>Q:How do clubs and organizations get involved?</h3>
+						</div>	
+						<div class="answer clubs">
+							<p>
+								<type style="color:#a0d39d; font-weight:bold">A:</type> Project GO programs can be a great addition to your already-existing after-school program. 4-H Clubs, Scout units, daycare centers, School age child care sites, latch key programs, park and recreation programs, community centers, youth centers, community education programs, boys and girls clubs and a wide range of other after school programs can incorporate Project GO into their schedules.
+							</br>
+							</br>	
+
+								Or, if a community does not have much programming available during the after school hours, Project GO programs can be run completely independent of another program.
+							</br>
+							</br>
+								<a href="http://www.mnprojectgo.com/Clubs/MapOfClubs.aspx" target="_blank">Map of our current GO Clubs</a> with links to each individual club blog.
+							</br>
+							</br>
+								The Project GO Club framework is built on components of 4-H and Scouting. Clubs are overseen by local program leaders and community volunteers who have been screened and trained. Clubs are open to youth between the ages of five and thirteen with a focus on serving low-income and at-risk children. Clubs meet once a week after school and during the summer months to participate in nature exploration and outdoor learning.
+							</br>
+							</br>
+								There is no fee for children to participate in Project GO Clubs.
+							</br>
+							</br>
+								Project GO provides FREE training to help guide your volunteers through the planning process for your program. This process includes mapping out the assets in your community; finding the potential volunteers, funders, program equipment and nature sites. We help you put the pieces of your program puzzle together!
+							</br>
+							</br>
+								Project GO also provides resources to help inform your volunteers and greater community of the important need to get children outdoors and connected to nature.
+							</br>
+							</br>
+								Though each step of planning, implementing, evaluating and sustaining your program, Project GO will be there to provide guidance on on-going support and resources.
+							</p>	
+						</div>
+						<div class="comments">
+							<h1>Questions or Comments?</h1>
+							<input class="text" placeholder="Name" style="width:250px;">
+							</input>
+						<div class="clear">
+						</div>	
+							<input class="text" placeholder="Email" style="margin:-10px 0 0 0; width:250px;">
+							</input>
+						<div class="clear">
+						</div>	
+						</br>
+						</br>
+							<p style="font-size:16px;">What's on your mind?</p>	
+							<input class="text" style="margin:10px 0 0 0; height:100px; width:250px;">
+							</input>
+						<div class="clear">
+						</div>
+							<div class="submit">
+								Submit
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="clear">
+		</div>
+
+		<div class="divide">
+		</div>
+
+		<div class="footer">
+			<div class="center">	
+				<div class="footer-links">
+					<div class="social">
+						<div class="facebook">
+							<img src="images/facebook.png" />
+						</div>
+						<div class="twitter">
+							<img src="images/twitter.png" />
+						</div>
+					</div>
+					<p>
+					About  |  Support Info  |  Privacy |  Terms of Use  |  Contact Us
+					</p>
+				</div>
+				<div class="copyright">
+					<p>
+					©Project Get Outdoors 2010. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>	

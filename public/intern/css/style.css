@@ -1,0 +1,123 @@
+html {}
+
+body {
+	margin: 0;
+	font-family: 'Avenir';
+}
+h1 {
+	font-size: 16px;
+	color: #444;
+	font-weight: lighter;
+}
+p {
+	color: #444;
+	font-size: 14px;
+	width: 75%;
+	line-height: 20px;
+}
+h2 {
+	color: #00a2e1;
+	font-size: 20px;
+	font-weight: lighter;
+	height: 100px;
+	line-height: 100px;
+}
+a {
+	color: #00a2e1;
+}
+
+
+
+/*.center {
+	width: 960px;
+	height: auto;
+	margin: auto;
+}*/
+.clear {
+	clear: both;
+}
+.content {
+	
+}
+
+#header {
+	height: 100px;
+	width: 100%;
+	padding: 40px 0 0 0;
+	/*border-bottom: solid 1px #444;*/
+}
+
+#footer {
+	height: 20px;
+	width: 100%;
+	text-align: bottom;
+	margin: 130px 0 0 0;
+
+}
+#title {
+	height: 200px;
+	width: auto;
+	color: #282c33;
+	font-size: 25px;
+}
+#logo {
+	height: 100px;
+	width: 100%;
+	margin: 20px 0 0 0;
+}
+.combine {
+	height: 100px;
+	width: 100%
+}
+#icons {}
+
+#products {
+	height: 200px;
+	width: 100%;
+
+}
+#office {
+	height: 300px;
+	width: 100%;
+}
+
+#pages {}
+
+#tasks {}
+
+#clipboard {}
+
+#meeting {}
+
+.sidebar {
+	height: 7000px;
+	width: 99px;
+	background-color: transparent;
+	/*position: absolute;*/
+	margin: -18px 60px 0 0;
+	float: left;
+	border-right: solid 1px #282c33;
+}
+
+.arrow {
+	height: 100px;
+	width: 40px;
+	float: left;
+	background-image: url('../images/arrow.png');
+	margin: 0 0 0 -80px;
+	z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 540px) {}
+

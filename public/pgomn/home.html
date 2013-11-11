@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>PGOMN</title>
+
+		<link rel="icon" type="image/png" href="images/icon.png">
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+		<script type="text/javascript" src="js/functions.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="leaflet-0.6.4/leaflet.css" />
+
+		<link rel="stylesheet" href="leaflet-0.6.4/leaflet.ie.css" />
+
+		<script type="text/javascript" src="leaflet-0.6.4/leaflet.js"></script>
+
+		<script type="text/javascript" src="leaflet-0.6.4/leaflet-src.js"></script>
+
+
+		<style type="text/css">
+			@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=e355c861-01b1-495c-8036-0de559396265&fontids=721220,721238,721250");
+			@font-face{
+			font-family:"Avenir LT W01 35 Light";
+			src:url("Fonts/721220/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix");
+			src:url("Fonts/721220/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix") format("eot"),url("Fonts/721220/c4352a95-7a41-48c1-83ce-d8ffd2a3b118.woff") format("woff"),url("Fonts/721220/3e419b5b-c789-488d-84cf-a64009cc308e.ttf") format("truetype"),url("Fonts/721220/ca038835-1be3-4dc5-ba25-be1df6121499.svg#ca038835-1be3-4dc5-ba25-be1df6121499") format("svg");
+					}
+		</style>
+
+
+
+
+
+	</head>
+
+	<body>
+
+		<div class="center">
+			<div class="callout">
+			</div>
+			<div class="search-filter">
+				<div class="filter-row">
+					<a href="winter.html">
+					<div class="filter-button">
+						<img src="images/winter.png" />
+					</div>
+				</a>
+					<div class="filter-button">
+						<img src="images/parks.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/fall.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/animals.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/city.png" />
+					</div>
+				</div>
+				<div class="filter-row">
+					<div class="filter-button">
+						<img src="images/trees.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/camping.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/lakes.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/free.png" />
+					</div>
+					<div class="filter-button">
+						<img src="images/summer.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="menu-panel">
+			<div class="panel-top">
+				<p style="float:left; font-size:20px; color: #f3797a;padding:25px 0 0 0;">Menu Options</p>
+				<div class="menu" style="float: right;">
+				</div>
+			</div>	
+			<div class="clear">
+			</div>
+			<div class="divide">
+			</div>
+
+			<div class="panel-search">
+				<img src="images/panel-search.png" />
+			</div>
+
+			<div class="small-filter">
+				<img src="images/small-filter.png" />
+			</div>
+
+			<div class="divide">
+			</div>
+
+				<a href="map.html">	
+					<div class="panel-tab">
+						<img src="images/panel-map.png" />
+					</div>	
+				</a>
+
+			<div class="divide">
+			</div>
+
+				<a href="gallery.html">	
+					<div class="panel-tab">
+						<img src="images/panel-gallery.png" />
+					</div>	
+				</a>
+
+			<div class="divide">
+			</div>
+
+				<a href="discover.html">	
+					<div class="panel-tab">
+						<img src="images/panel-discover.png" />
+					</div>	
+				</a>
+
+			<div class="divide">
+			</div>
+
+				<a href="resources.html">	
+					<div class="panel-tab">
+						<img src="images/panel-resources.png" />
+					</div>	
+				</a>
+
+			<div class="divide">
+			</div>	
+			
+		</div>
+
+
+		<div class="header">
+			<div class="center">
+				<div class="menu">
+				</div>
+				<a href="index.html">
+					<div class="logo">
+						<img src="images/logo.png" />
+						
+					</div>
+					<div class="logo-small">
+						<img src="images/logo-small.png" />
+					</div>
+				</a>	
+				<div class="profile-small">
+				</div>
+				<a href="map.html">	
+					<div class="map-tab">
+						<img src="images/map_icon.png" />
+					</div>	
+				</a>	
+				<a href="gallery.html">	
+					<div class="gallery-tab">
+						<img src="images/gallery_icon.png" />
+					</div>
+				</a>	
+				<a href="discover.html">	
+					<div class="discover-tab">
+						<img src="images/discover_icon.png" />
+					</div>
+				</a>	
+				<a href="resources.html">	
+					<div class="resources-tab">
+						<img src="images/resources_icon.png" />
+					</div>
+				</a>	
+					<div class="profile">
+					</div>
+
+					<div class="search">
+						<img src="images/search.png" />
+					</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="banner">
+				<div class="center">
+					<div class="welcome">
+						Welcome to Project Go MN!
+					</div>
+					<div class="welcome-small">
+						Welcome to <br>Project Go MN!
+					</div>
+					<div class="info-graphic">
+						<img src="images/info-graphic.png" />
+					</div>
+				</div>	
+			</div>
+
+			<div class="about-us">
+				<div class="center">
+					<div class="left">
+						<div class="about">
+							<h1>About Us</h1>
+							</br>
+							<p>
+								Project Get Outdoors, Inc. (Project GO) is a non-profit organization founded in 2006 to assist Minnesota communities in connecting children to nature exploration and outdoor learning during the out-of-school hours. Project GO was developed in response to Richard Louv's 2005 book, "Last Child in the Woods: Saving Our Children from Nature-Deficit Disorder". Click here to view a short video on the history and need for Project GO.
+								</br>
+								</br>
+								With the help of our project partners, Project GO has developed a free Toolkit to guide communities through the stages of designing, implementing, evaluating and sustaining their own unique Project GO after school programs.
+							</p>
+						</div>
+						</br>
+						</br>	
+						<div class="mission-info-left">
+							<h1>Our Mission</h1>
+							</br>
+							<p>
+								Is to facilitate outdoor experiences that develop healthy<br> 
+								kids and increase environmental stewardship behaviors.
+							</p>
+						</div>
+					</div>
+
+					<div class="right">
+						<div class="home-image">
+							<img src="images/kate.png" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="clear">
+			</div>
+
+			<div class="mission">
+				<div class="center">
+					<div class="hill">
+						<img src="images/hill.png" />
+					</div>
+
+					<div class="right">
+						<div class="mission-info">
+							<h1>Our Mission</h1>
+							</br>
+							<p>
+								Is to facilitate outdoor experiences that develop healthy<br> 
+								kids and increase environmental stewardship behaviors.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="vision">
+				<div class="center">
+					<div class="left">
+						<h1>Our Vision</h1>
+						</br>
+						<p>
+							Project Get Outdoors envisions a world in which all kids, everyday, spend time outdoors. High- quality, efficient, outdoor programs will be embedded in communities and have stable funding. These programs will link youth and caring adult volunteers to exploration, play and reflection in nature near local communities so children grow to be healthy, comfortable outdoors, and knowledgeable and passionate about their land and community throughout their lives. Contact with nature will provide physical, mental, and social health benefits to all participants, and citizens will demonstrate environmental stewardship behaviors.
+							</br>
+							</br>
+
+							In 2013, a graduate student with the U of MN Twin Cities completed a research paper comparing Project GO with other outdoor education programs across the country. The research shows that Project GO is different from all other organizations and outdoor programs! Click the below link to access the report: Project GO: Moving Forward
+						</p>
+					</div>	
+					<div class="right">
+						<div class="quotes">
+							<img src="images/quotes.png" />
+						</div>
+					</div>
+				</div>	
+			</div>
+
+		</div>
+
+		<div class="divide">
+		</div>
+
+		<div class="footer">
+			<div class="center">	
+				<div class="footer-links">
+					<div class="social">
+						<div class="facebook">
+							<img src="images/facebook.png" />
+						</div>
+						<div class="twitter">
+							<img src="images/twitter.png" />
+						</div>
+					</div>
+					<p>
+					About  |  Support Info  |  Privacy |  Terms of Use  |  Contact Us
+					</p>
+				</div>
+				<div class="copyright">
+					<p>
+					©Project Get Outdoors 2010. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>	

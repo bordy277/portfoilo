@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Ag21</title>
+
+		<link rel="icon" type="image/png" href="images/icon.png">
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+		<script type="text/javascript" src="js/binds.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+	<body>
+		<div class="killer"></div>
+		<div class="crop-panel">
+			<div class="crop-top">
+				<div class="crop-x">
+				</div>
+			</div>
+			<div class="crop-title">
+				Crop Type
+				<br />
+				Choose One
+			</div>
+			<div class="crop-field">
+				<img src="images/corn-uncheck.png" />
+			</div>
+			<div class="crop-field">
+				<img src="images/soybean-unchecked.png" />
+			</div>
+			<div class="crop-field">
+				<img src="images/wheat-checked.png" />
+			</div>
+			<div class="crop-field">
+				<img src="images/potato-unchecked.png" />
+			</div>
+			<div class="crop-field">
+				<img src="images/other-unchecked.png" />
+			</div>
+		</div>
+		<div class="setup-panel">
+			<div class="setup-header">
+				<div class="setup-settings">
+					<div class="set-up">
+						Set Up
+					</div>
+				</div>
+				<div class="setup-x">
+				</div>
+			</div>
+			<div class="nav">
+				<div class="tab left active">
+					<div class="center-tab">
+						Tickets
+					</div>
+				</div>	
+				<div class="tab center">
+					<div class="center-tab">
+						Views
+					</div>
+				</div>
+				<div class="tab right">
+					<div class="center-tab">
+						Misc
+					</div>
+				</div>		
+			</div>
+			<div class="tickets-content">
+				<div class="headers">
+					Tickets
+				</div>
+				<div class="titles">
+					<div class="titles-left">
+						Net
+					</div>
+					<div class="titles-center">
+						Tare
+					</div>
+					<div class="titles-right">
+						MyData
+					</div>
+				</div>
+				<div class="white-divider">
+					<div class="uncheck">
+					</div>
+					<div class="uncheck">
+					</div>
+					<div class="check">
+					</div>
+					Cart
+				</div>
+				<div class="gray-divider">
+					<div class="uncheck">
+					</div>
+					<div class="check">
+					</div>
+					<div class="check">
+					</div>
+					Field To Storage
+				</div>
+				<div class="white-divider">
+					<div class="check">
+					</div>
+					<div class="uncheck">
+					</div>
+					<div class="uncheck">
+					</div>
+					Field To Customer
+				</div>
+				<div class="gray-divider">
+					<div class="check">
+					</div>
+					<div class="uncheck">
+					</div>
+					<div class="check">
+					</div>
+					Storage To Customer
+				</div>
+				<div class="headers">
+					Scale Options
+				</div>
+				<div class="white-divider">
+					<div class="check">
+					</div>
+					<div class="uncheck">
+					</div>
+					<div class="check">
+					</div>
+					Axle Scale
+				</div>
+				<div class="headers">
+					Baton Pass Options
+				</div>
+				<div class="gray-divider">
+					<div class="check">
+					</div>
+					<div class="check">
+					</div>
+					<div class="uncheck">
+					</div>
+					Field To Customer
+				</div>
+				<div class="white-divider">
+					<div class="uncheck">
+					</div>
+					<div class="check">
+					</div>
+					<div class="uncheck">
+					</div>
+						Field To Storage
+				</div>
+				<div class="gray-divider">
+					<div class="uncheck">
+					</div>
+					<div class="check">
+					</div>
+					<div class="check">
+					</div>
+					Allow Zero Weight Field To Storage
+				</div>
+			</div>
+			<div class="views-content">
+				<div class="headers">
+					Grain
+				</div>
+				<div class="white-divider">
+					<div class="check-ghost">
+					</div>
+					<div class="check">
+					</div>
+					<div class="check-ghost">
+					</div>
+					Cart
+				</div>
+				<div class="gray-divider">
+					<div class="check-ghost">
+					</div>
+					<div class="check">
+					</div>
+					<div class="check-ghost">
+					</div>
+					Field To Storage
+				</div>
+				<div class="white-divider">
+					<div class="check-ghost">
+					</div>
+					<div class="uncheck">
+					</div>
+					<div class="check-ghost">
+					</div>
+					Field To Customer
+				</div>
+				<div class="gray-divider">
+					<div class="check-ghost">
+					</div>
+					<div class="check">
+					</div>
+					<div class="check-ghost">
+					</div>
+					Storage To Customer
+				</div>
+				<div class="headers">
+					Cart
+				</div>
+				<div class="white-divider">
+					<div class="check-ghost">
+					</div>
+					<div class="uncheck">
+					</div>
+					<div class="check-ghost">
+					</div>
+					Alt Log Button
+				</div>
+				<div class="headers">
+					Other
+				</div>
+				<div class="gray-divider">
+					<div class="check-ghost">
+					</div>
+					<div class="check">
+					</div>
+					<div class="check-ghost">
+					</div>
+					History
+				</div>
+			</div>
+			<div class="misc-content">
+				<div class="headers">
+					Preferences
+				</div>
+				<div class="white-divider">
+					<div class="check-ghost">
+					</div>
+					<div class="uncheck">
+					</div>
+					<div class="check-ghost">
+					</div>
+					Write Upload
+				</div>
+				<div class="headers">
+					Database Management
+				</div>
+				<div class="white-divider">
+					<input class="misc-input" placeholder="Backup DB to SD">
+					</input>
+					<div class="restore">
+					</div>
+				</div>
+				<div class="headers">
+					History
+				</div>
+				<div class="white-divider">
+					<div class="export">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="history-panel">
+			<div class="history-header">
+				<div class="ticket-history">
+					Ticket History
+				</div>
+				<div class="ticket-x">
+				</div>
+				<div class="upload">
+				</div>
+			</div>
+			<div class="nav">
+				<div class="tab left active">
+					<div class="center-tab">
+						Inputs
+					</div>
+				</div>	
+				<div class="tab center">
+					<div class="center-tab">
+						Harvest
+					</div>
+				</div>
+				<div class="tab right">
+					<div class="center-tab">
+						Inventory
+					</div>
+				</div>		
+			</div>
+			<div class="ticket-list">
+				<div class="ticket-field">
+					<div class="indicator">
+						<img src="images/green-indicator.png" />
+					</div>
+					<div class="ticket">
+						<div class="ticket-description">
+							<img src="images/ticket-description.png" />
+						</div>
+						<div class="ticket-info">
+							Field to Customer
+							<br />
+							Waiting For Upload
+							<br />
+							May 17, 2013 2:30 PM
+							<br />
+							——–
+						</div>
+						<div class="arrow">
+						</div>
+					</div>
+				</div>
+				<div class="ticket-field">
+					<div class="indicator">
+						<img src="images/orange-indicator.png" />
+					</div>
+					<div class="ticket">
+						<div class="ticket-description">
+							<img src="images/ticket-description.png" />
+						</div>
+						<div class="ticket-info">
+							Field to Customer
+							<br />
+							Waiting For Upload
+							<br />
+							May 17, 2013 2:30 PM
+							<br />
+							——
+						</div>
+						<div class="arrow">
+						</div>
+					</div>
+				</div>
+				<div class="ticket-field">
+					<div class="indicator">
+						<img src="images/green-indicator.png" />
+					</div>
+					<div class="ticket">
+						<div class="ticket-description">
+							<img src="images/ticket-description.png" />
+						</div>
+						<div class="ticket-info">
+							Field to Customer
+							<br />
+							Waiting For Upload
+							<br />
+							May 17, 2013 2:30 PM
+							<br />
+							——–
+						</div>
+						<div class="arrow">
+						</div>
+					</div>
+				</div>
+				<div class="ticket-field">
+					<div class="indicator">
+						<img src="images/green-indicator.png" />
+					</div>
+					<div class="ticket">
+						<div class="ticket-description">
+							<img src="images/ticket-description.png" />
+						</div>
+						<div class="ticket-info">
+							Field to Customer
+							<br />
+							Waiting For Upload
+							<br />
+							May 17, 2013 2:30 PM
+							<br />
+							——–
+						</div>
+						<div class="arrow">
+						</div>
+					</div>
+				</div>
+				<div class="ticket-field">
+					<div class="indicator">
+						<img src="images/green-indicator.png" />
+					</div>
+					<div class="ticket">
+						<div class="ticket-description">
+							<img src="images/ticket-description.png" />
+						</div>
+						<div class="ticket-info">
+							Field to Customer
+							<br />
+							Waiting For Upload
+							<br />
+							May 17, 2013 2:30 PM
+							<br />
+							——–
+						</div>
+						<div class="arrow">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="info-overlay">
+			<div class="center-areas">
+				<div class="info-x">
+				</div>
+				<div class="info-box">
+					If you have a user name and cannot login
+					please contact your farm administrator or <br>call 
+					the Conservis customer support at <br>612-424-6314.
+					<p/>
+					If you not not have a username please <br> contact sales at 612-424-6300.
+
+
+				</div>
+			</div>
+		</div>
+		<div class="login">	
+			<div class="center-areas">
+				<div class="login-center">
+					<div class="login-info">
+					</div>
+					<img src="images/login-aglogo.png" />
+					<div class="login-copy">
+						Welcome to your Farm Insight<br>
+						and Decision System
+					</div>
+					<div class="login-box">
+						<div class="login-input">
+							<input class="login-input" placeholder="Username">
+							</input>
+							<input class="login-input" placeholder="Password">
+							</input>
+						</div>
+					</div>
+					<div class="login-space">
+						<div class="login-button">
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="container">
+			<div class="header">
+				<div class="header-top">
+					<div class="logo">
+					</div>
+					<div class="logout">
+						Logout
+					</div>
+					<div class="person-outer">
+						<div class="refresh">
+						</div>
+						<input class="person" placeholder="username">
+						</input>
+					</div>
+					<div class="settings">
+					</div>
+					<div class="machine">
+						Grain Cart 1
+					</div>
+					<div class="clear">
+					</div>
+				</div>
+				<div class="nav">
+					<div class="tab left active">
+						<div class="center-tab">
+							Inputs
+						</div>
+					</div>	
+					<div class="tab center">
+						<div class="center-tab">
+							Harvest
+						</div>
+					</div>
+					<div class="tab right">
+						<div class="center-tab">
+							Inventory
+						</div>
+					</div>		
+				</div>
+			</div>
+			<div class="page inputs">
+				<div class="bar">
+					<div class="history-button">
+					</div>
+				</div>
+				<div class="modules">
+					<div class="mod spray"></div>
+					<div class="mod spread"></div>
+					<div class="mod till"></div>
+					<div class="mod plant"></div>
+					<div class="mod fr"></div>
+					<div class="mod other"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="border">
+				</div>
+				<div class="footer">
+				</div>
+			</div>
+			<div class="page harvest">
+				<div class="bar">
+					<div class="history-button">
+					</div>
+				</div>
+				<div class="modules">
+					<div class="mod fs"></div>
+					<div class="mod fc"></div>
+					<div class="mod sc"></div>
+					<div class="mod gc"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="border">
+				</div>
+				<div class="footer">
+					<div class="moist-harvest">
+						<div class="moisture-set">
+						</div>
+						<div class="moisture">
+							<div class="moist-drop">
+								<img src="images/moist-drop.png" />
+							</div>
+							<input class="moisture-input" placeholder="0.0%">
+							</input>
+						</div>
+					</div>
+				</div>
+				<div class="clear">
+				</div>
+				<div class="border-harvest">
+				</div>
+				<div class="footer-harvest">
+					<div class="sync-harvest">
+					</div>
+					<div class="light-white-harvest">
+					</div>
+					<div class="light-green-harvest">
+					</div>
+					<div class="weight">
+						<input class="weight-input" placeholder="0000000 LBS">
+						</input>
+					</div>
+					<div class="list">
+						<img src="images/list.png" />
+					</div>
+					<div class="field-choice">
+						<input class="field-input" placeholder="Field">
+						</input>
+					</div>
+				</div>	
+				<div class="clear">
+				</div>
+			</div>
+			<div class="page inventory">
+				<div class="bar">
+					<div class="history-button">
+					</div>
+				</div>
+				<div class="modules">
+					<div class="mod ti"></div>
+					<div class="mod to"></div>
+					<div class="mod cd"></div>
+					<div class="mod cr"></div>
+					<div class="mod lo"></div>
+					<div class="mod ia"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="border">
+				</div>
+				<div class="footer">
+				</div>
+			</div>
+	    </div>
+		<div class="container">	
+			<div class="grain-cart">
+				<div class="gc-left">
+					<img src="images/gc-icon.png" />
+					<div class="gc-cancel">
+					</div>
+				</div>
+				<div class="gc-border">
+				</div>
+				<div class="gc-right">
+					<div class="flag-ticket">
+						<img src="images/blue-ticket.png" />
+					</div>
+					<div class="time">
+						05.14.2013<br>
+						12:32 p.m.
+					</div>
+					<div class="fields">
+						<div class="sync">
+						</div>
+						<div class="light-white">
+						</div>
+						<div class="light-green">
+						</div>
+						<input class="weight-input" placeholder="0000000 LBS">
+						</input>
+					</div>
+					<div class="fields">
+						<div class="moisture-set">
+						</div>
+						<div class="moisture">
+							<div class="moist-drop">
+								<img src="images/moist-drop.png" />
+							</div>
+							<div class="moisture-input">
+								<input class="moisture-input" placeholder="0.0%">
+								</input>
+							</div>
+						</div>
+					</div>
+					<div class="fields">
+						<input class="fields-input" placeholder="Field">
+						</input>
+					</div>
+					<div class="fields">
+						<input class="fields-input" placeholder="Crop">
+						</input>
+					</div>
+					<div class="menu">
+						<div class="menu-drop">
+							<img src="images/blue-dropdown.png" />
+						</div>
+						<input class="menu-input" placeholder="Receiving Equipment">
+						</input>
+					</div>
+					<div class="menu">
+						<input class="menu-input" placeholder="Receiving Operator">
+						</input>
+					</div>
+					<div class="menu">
+						<div class="menu-drop">
+							<img src="images/blue-dropdown.png" />
+						</div>
+						<input class="menu-input" placeholder="Delivery Location">
+						</input>
+					</div>
+					<div class="menu">
+						<div class="menu-drop">
+							<img src="images/blue-dropdown.png" />
+						</div>
+						<input class="menu-input" placeholder="Split Ticket">
+						</input>
+					</div>
+					<div class="complete">
+						<div class="field-complete">
+							<img src="images/field-complete.png" />
+						</div>
+						<div class="field-check">
+							<img src="images/field-complete-check.png" />
+						</div>
+						<div class="submit">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="submit-overlay">
+				<div class="center-areas">
+					<div class="submit-x">
+					</div>
+					<div class="submit-box">
+						Submit this ticket now?
+						<div class="submit-yes">
+						</div>
+					</div>
+					<div class="confirmation-box">
+						<div class="solo-check">
+						</div>
+						Your ticket has been <p/> 
+						successfully submitted.
+					</div>
+				</div>
+			</div>
+			<div class="contract-delivery">
+				<div class="cd-left">
+					<img src="images/cd-icon.png" />
+					<div class="cd-cancel">
+					</div>
+				</div>
+				<div class="gc-border">
+				</div>
+				<div class="cd-right">
+					<div class="flag-ticket">
+						<img src="images/gray-ticket.png" />
+					</div>
+					<div class="time">
+						05.14.2013<br>
+						12:32 p.m.
+					</div>
+					<div class="cd-fields">
+						<div class="fields">
+							<input class="fields-input" placeholder="Field">
+							</input>
+							<div class="menu-drop">
+								<img src="images/gray-dropdown.png" />
+							</div>
+						</div>
+						<div class="fields">
+							<div class="menu-drop">
+								<img src="images/blue-dropdown.png" />
+							</div>
+							<div class="cd-box">
+								Contract
+							</div>
+						</div>
+						<div class="fields">
+							<div class="cd-box">
+								Bill Of Lading
+							</div>
+						</div>
+						<div class="fields">
+							<div class="cd-box">
+								Delivery Location
+							</div>
+						</div>
+						<div class="fields">
+							<div class="cd-box">
+								Add Note
+							</div>
+						</div>
+						<div class="fields">
+							<div class="submit">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,4 +3,4 @@
 	url = git://github.com/bordy277/earthworks.git
 [submodule "public/trimac"]
 	path = public/trimac
-	url = git@github.com:bordy277/trimac.git
+	url = git://github.com/bordy277/trimac.git

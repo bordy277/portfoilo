@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-	function hideAll() {
-		alert('caw');
-		$('#oven').hide();
+	$('.project.one').click(function(){
+
+		$('#oven').toggle();
 		$('#conservis').hide();
 		$('#ff').hide();
 		$('#sleepr').hide();
@@ -10,46 +10,97 @@ $(document).ready(function(){
 		$('#earthworks').hide();
 		$('#claires').hide();
 		$('#sirocco').hide();
-	}
 
-	$('.project.one').click(function(){
-		hideAll();
-		$('#oven').toggle();
-		alert('day');
 	});
 	
 	$('.project.two').click(function(){
-		hideAll();
+
 		$('#pgomn').toggle();
+		$('#oven').hide();
+		$('#conservis').hide();
+		$('#sleepr').hide();
+		$('#ff').hide();
+		$('#earthworks').hide();
+		$('#claires').hide();
+		$('#sirocco').hide();
+
 	});
 
 	$('.project.three').click(function(){
-		hideAll();
+
 		$('#conservis').toggle();
+		$('#oven').hide();
+		$('#ff').hide();
+		$('#sleepr').hide();
+		$('#pgomn').hide();
+		$('#earthworks').hide();
+		$('#claires').hide();
+		$('#sirocco').hide();
+
 	});
 
 	$('.project.four').click(function(){
-		hideAll();
+
 		$('#earthworks').toggle();
+		$('#oven').hide();
+		$('#conservis').hide();
+		$('#sleepr').hide();
+		$('#ff').hide();
+		$('#pgomn').hide();
+		$('#claires').hide();
+		$('#sirocco').hide();
+
 	});
 
 	$('.project.five').click(function(){
-		hideAll();
+
 		$('#sleepr').toggle();
+		$('#oven').hide();
+		$('#conservis').hide();
+		$('#ff').hide();
+		$('#pgomn').hide();
+		$('#earthworks').hide();
+		$('#claires').hide();
+		$('#sirocco').hide();
+
 	});
 
 	$('.project.six').click(function(){
-		hideAll();
+
 		$('#ff').toggle();
+		$('#oven').hide();
+		$('#conservis').hide();
+		$('#sleepr').hide();
+		$('#pgomn').hide();
+		$('#earthworks').hide();
+		$('#claires').hide();
+		$('#sirocco').hide();
+
 	});
 	$('.project.seven').click(function(){
-		hideAll();
+
 		$('#sirocco').toggle();
+		$('#oven').hide();
+		$('#conservis').hide();
+		$('#sleepr').hide();
+		$('#ff').hide();
+		$('#pgomn').hide();
+		$('#earthworks').hide();
+		$('#claires').hide();
+
 	});
 
 	$('.project.eight').click(function(){
-		hideAll();
+
 		$('#claires').toggle();
+		$('#oven').hide();
+		$('#conservis').hide();
+		$('#sleepr').hide();
+		$('#ff').hide();
+		$('#sirocco').hide();
+		$('#pgomn').hide();
+		$('#earthworks').hide();
+
 	});
 
 	$('.tab.work').click(function(){

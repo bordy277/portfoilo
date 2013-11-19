@@ -115,12 +115,14 @@ a {
 	height: 500px;
 	background-color: #999;
 	background-image: url('../images/profile.jpg');
+	background-repeat: no-repeat;
 }
 #profile-small {
 	width:auto;
 	height: 300px;
 	background-color: #999;
 	background-image: url('../images/profile-small.jpg');
+	background-repeat: no-repeat;
 }
 
 #contact {
@@ -198,11 +200,9 @@ a {
 	#header {display: none;}
 	#header-small {display: block;}
 	.project {width: auto;font-size: 30px;height: 30px;padding: 100px 20px 20px 20px;}
-	#work {display: none;}
-	#work-small {display: block;}
 	p {width: auto; padding: 0 20px 0 20px;}
 	.photos {width: 350px;}
-	.photos img.resize {width: 350px; height: auto;}
+	.photos img {height:auto; width:auto; max-width:300px; max-height:300px;}
 	#bio {display: none;}
 	#bio-small {display: block;}
 	h1 {padding: 0 0 0 20px; margin: 20px 0 0 0}

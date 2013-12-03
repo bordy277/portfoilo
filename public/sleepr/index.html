@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Sleepr</title>
+
+		<link rel="icon" type="image/png" href="images/icon.png">
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+		<script type="text/javascript" src="js/binds.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+		<script>
+
+		</script>
+
+		<style type="text/css">
+			@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=e355c861-01b1-495c-8036-0de559396265&fontids=721220,721238,721250");
+			@font-face{
+			font-family:"Avenir LT W01 35 Light";
+			src:url("Fonts/721220/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix");
+			src:url("Fonts/721220/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix") format("eot"),url("Fonts/721220/c4352a95-7a41-48c1-83ce-d8ffd2a3b118.woff") format("woff"),url("Fonts/721220/3e419b5b-c789-488d-84cf-a64009cc308e.ttf") format("truetype"),url("Fonts/721220/ca038835-1be3-4dc5-ba25-be1df6121499.svg#ca038835-1be3-4dc5-ba25-be1df6121499") format("svg");
+					}
+
+		</style>
+			
+
+		
+			
+
+			
+	</head>
+
+	<body onload="startTime()">
+
+		<div id="sound-container">
+			<audio id="alarm">
+				<source src="sounds/alarm.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="sound">
+				<!-- Noises -->
+				<!-- <source src="sounds/ocean.mp3" type="audio/mpeg"> -->
+			</audio>
+		</div>
+
+
+
+	
+		<div class="content">
+			<div class="bg">
+				<div class="ipad">
+					<div class="center">
+
+
+						<div class="screen">
+
+							<div class="alarm-notice">
+								<div class="alarm">
+									<div class="current-setting">
+										It is now <span class="current-hour"></span>:<span class="current-minute"></span> <span class="current-am-pm"></span> get up lazy!
+									</div>
+								</div>	
+								<div class="off">
+									Off
+								</div>
+								<div class="snooze">
+									Snooze
+								</div>
+							</div>
+
+							<div class="timer-notice">
+								<div class="timer">
+									<div class="current-setting">
+										It is now <span class="current-hour"></span>:<span class="current-minute"></span> <span class="current-am-pm"></span> your timer has expired.
+									</div>
+								</div>	
+								<div class="reset">
+									Reset
+								</div>
+								<div class="ok">
+									OK
+								</div>
+							</div>
+
+							<div class="splash">
+							</div>
+
+							<div class="menu">
+								<div class="noise-panel">
+									<h1>Ambient Noises</h1>
+										<!-- <h2>Ocean Waves</h2> -->
+										<div class="list">
+											<div class="noise">
+												<h2>Ocean Waves</h2>
+											</div>
+											<div class="noise">
+												<h2>Relaxing Rainfall</h2>
+											</div>
+											<div class="noise">
+												<h2>Calming Storm</h2>
+											</div>
+											<div class="noise">
+												<h2>Jungle Experience</h2>
+											</div>
+											<div class="noise">
+												<h2>Beautiful Breeze</h2>
+											</div>
+											<div class="noise">
+												<h2>Trickling Creek</h2>
+											</div>
+											<div class="noise">
+												<h2>Electric Fan</h2>
+											</div>
+										</div>
+										<div class="select">
+											<form action="" style="width:50px; float:left; test-align:right;">
+												<input type="radio" name="sound" value="ocean" class="radio" checked><br>
+												<input type="radio" name="sound" value="rain" class="radio"><br>
+												<input type="radio" name="sound" value="storm" class="radio"><br>
+												<input type="radio" name="sound" value="jungle" class="radio"><br>
+												<input type="radio" name="sound" value="breeze" class="radio"><br>
+												<input type="radio" name="sound" value="creek" class="radio"><br>
+												<input type="radio" name="sound" value="fan" class="radio"><br>
+											</form>
+											
+										</div>
+
+
+								</div>
+
+								<div class="time-panel">
+									<h1>Set Alarm</h1>
+									<div class="alarm">
+
+										<div class="current-setting">
+											<span class="current-hour"></span>:<span class="current-minute"></span> <span class="current-am-pm"></span>
+
+										</div>
+										<select class="hour">
+										</select>
+										<select class="minute">
+											
+										</select>
+										<select class="am-pm">
+											<option value="am">am</option>
+											<option value="pm">pm</option>
+										</select>
+										<div class="set-alarm">
+											Set Alarm
+										</div>
+									</div>	
+									<div class="clear">
+									</div>
+									
+									<div class="timer">
+
+										<h1>Set Timer</h1>
+
+										<div class="current-setting">
+											<span class="current-hour"></span>:<span class="current-minute"></span> <span class="current-am-pm"></span>
+
+										</div>
+										<select class="hour">
+										</select>
+										<select class="minute">
+											
+										</select>
+										<select class="am-pm">
+											<option value="am">am</option>
+											<option value="pm">pm</option>
+										</select>
+										<div class="set-timer">
+											Set Timer
+										</div>
+									</div>	
+								</div>
+								<div class="close">
+								</div>
+							</div>
+
+							
+
+							
+
+							<div class="nav">
+								<div class="noise-button">
+								</div>
+								<div class="noise-button active">
+								</div>
+								<div class="controls">
+									<div class="action play">
+									</div>
+									<div class="action pause">
+								</div>
+								</div>
+								<div class="time-button">
+								</div>
+								<div class="time-button active">
+								</div>
+							</div>	
+
+							
+							<div class="splash">
+							</div>
+
+							
+
+
+
+
+							<div class="beach">
+								<div class="time">
+									<div id="clock" type="text/css">
+									</div>
+									<div class="date">
+										<font color="#ffffff" style="font-weight:bold"www>
+											<script type="text/javascript">
+											var d=new Date()
+
+											var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+											var monthname=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+											document.write(weekday[d.getDay()] + " ")
+											document.write(d.getDate() + ". ")
+											document.write(monthname[d.getMonth()] + " ")
+											document.write(d.getFullYear())
+											</script>
+										</font>
+									</div>	
+								</div>	
+							</div>
+
+
+
+
+
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</body>
+
+</html>		
+

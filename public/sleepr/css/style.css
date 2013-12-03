@@ -1,0 +1,360 @@
+html{
+	margin: 0;
+}
+body {
+	margin: 0;
+	font-family: "Avenir";
+}
+h1 {
+	height: 80px;
+	width: 330px;
+	font-size: 20px;
+	color: #282c33;
+	line-height: 80px;
+	font-weight: lighter;
+	border-bottom: solid 1px #adadad;
+	margin: 0 0 20px 0;
+}
+h2 {
+	height: 50px;
+	width: 200px;
+	font-size: 16px;
+	color: #555;
+	margin: 0;
+	font-weight: lighter;
+	line-height: 50px;
+	float: left;
+}
+.content {}
+.clear {
+	clear: both;
+}
+.bg {
+	width: 1200px;
+	height: 1000px;
+	margin: auto;
+}
+.ipad {
+	height: 1000px;
+	width: 1200px;
+	background-image: url('../images/ipad.jpg');
+	background-repeat: no-repeat;
+	z-index: -2;
+}
+.center {
+	width: 700px;
+	height: 1000px;
+	margin: auto;
+}
+.screen {
+	height: 510px;
+	width: 700px;
+	float: left;
+	margin: 235px 0 0 0;
+	overflow: hidden;
+	position: relative;
+}
+.splash {
+	height: 510px;
+	width: 700px;
+	float: left;
+	background-image: url('../images/splash.jpg');
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.beach {
+	height: 510px;
+	width: 700px;
+	float: left;
+	background-image: url('../images/ocean.jpg');
+	background-repeat: no-repeat;
+	display: none;
+	overflow: hidden;
+	position: absolute;
+
+}
+
+
+.nav {
+	height: 80px;
+	width: 700px;
+	position: absolute;
+	background-color: #fff;
+	margin: 429px 0 0 0;
+	display: none;
+	z-index: 10;
+	opacity: .9;
+	border-top: solid 1px #d0d0d0;
+}
+#clock {
+	font-size: 100px;
+	position: absolute;
+	text-align: center;
+	width: 700px;
+	margin: 100px 0 0 0;
+	color: #fff;
+	display: none;
+	background-color: transparent;
+	font-family: "Avenir";
+	z-index: 5;
+	opacity: .9;
+	font-weight: lighter;
+}
+.time {}
+.date {
+	width: 700px;
+	margin: auto;
+	text-align: center;
+	position: absolute;
+	margin: 220px 0 0 0;
+	opacity: .9;
+}
+.noise-button {
+	height: 80px;
+	width: 80px;
+	float: left;
+	background-image: url('../images/speaker.png');
+	cursor: pointer;
+}
+.noise-button:active {
+	opacity: .5;
+}
+.active {
+	display: none;
+}
+.time-button {
+	height: 80px;
+	width: 80px;
+	float: right;
+	background-image: url('../images/clock.png');
+	cursor: pointer;
+}
+.time-button:active {
+	opacity: .5;
+}
+.controls {
+	height: 80px;
+	width: 80px;
+	float: left;
+	padding: 0 230px 0 230px;
+}
+.action {
+	height: 80px;
+	width: 80px;
+	float: left;
+	cursor: pointer;
+}
+.action.play {
+	background-image: url('../images/play.png');
+	
+}
+.action.pause {
+	background-image: url('../images/pause.png');
+	display: none;
+}
+
+.noise-panel {
+	height: 430px;
+	width: 350px;
+	background-color: transparent;
+	float: left;
+	overflow: scroll;
+	display: none;
+	margin: 0 0 0 190px;
+}
+.noise-panel::-webkit-scrollbar { 
+    display: none; 
+}
+
+.time-panel {
+	height: 430px;
+	width: 350px;
+	background-color: transparent;
+	float: left;
+	display: none;
+	margin: 0 0 0 190px;
+	overflow: scroll;
+}
+.time-panel::-webkit-scrollbar { 
+    display: none; 
+}
+.list {
+	height: 100%;
+	width: 280px;
+	float: left;
+}
+.noise {
+	height: 50px;
+	width: 280px;
+	cursor: pointer;
+}
+.select {
+	height: 100%;
+	width: 50px;
+	float: left;
+	margin-top: 10px;
+}
+.radio {
+	height: 50px;
+	margin: 0 0 19px 20px;
+	cursor: pointer;
+}
+.select input[type="radio"] {
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	border: solid 1px #282c33;
+	height: 30px;
+	width: 30px;
+	outline:  none !important;
+	border-radius: 100px;
+}
+.select input[type="radio"]:checked {
+	background-position: center;
+	background-image: url('../images/checked.png');
+	background-repeat: no-repeat;
+
+}
+.set-date {
+	height: 100px;
+	width: 330px;
+	padding: 0 0 0 20px;
+	border-bottom: solid 1px #adadad;
+}
+.set {
+	border-radius: 5px;
+	height: 30px;
+	background-color: #fff;
+	border: solid 1px #282c33;
+	width: 180px;
+	padding: 0 0 0 20px;
+	font-family: "avenir";
+	font-size: 14px;
+}
+.set-button {
+	height: 30px; 
+	width: 60px; 
+	border: solid 1px #282c33; 
+	border-radius:5px; 
+	margin:0 0 0 10px; 
+	color: #ffffff; 
+	background-color:#282c33; 
+	float:left; 
+	text-align:center; 
+	line-height:30px; 
+	font-size:12px;
+	cursor: pointer;
+}
+.set-button:active {
+	background-color: #d0d0d0;
+}
+.set-time {
+	height: 100px;
+	width: 330px;
+	padding: 0 0 0 20px;
+	border-bottom: solid 1px #adadad;
+}
+.menu {
+	background-color: #fff;
+	opacity: .9;
+	width: 700px;
+	position: absolute;
+	z-index: 20;
+	display: none;
+}
+.close {
+	width: 80px;
+	height: 80px;
+	background-color: transparent;
+	float: right;
+	background-image: url('../images/close.png');
+	background-repeat: no-repeat;
+	display: none;
+	cursor: pointer;
+}
+.alarm .current-setting, .timer .current-setting {
+	display: none;
+	width: 230px;
+	font-size: 25px;
+	margin: 0 0 20px 0;
+}
+.alarm-notice, .timer-notice {
+	width: 230px;
+	background-color: #fff;
+	padding: 20px 48px 20px 48px;
+	position: absolute;
+	top: 140px;
+	left: 190px;
+	display: none;
+	z-index: 30;
+	border: solid 1px #d0d0d0;
+	box-shadow: 0px 0px 10px #cfcdcd;
+}
+.off, .reset, .snooze, .ok  {
+	height: 40px;
+	width: 100px;
+	line-height: 40px;
+	text-align: center;
+	border: solid 1px #282c33;
+	border-radius: 3px;
+	float: left;
+	margin: 0 10px 0 0;
+	cursor: pointer;
+}
+.off:active, .reset:active, .ok:active, .snooze:active {
+	opacity: .5;
+}
+.snooze, .ok {
+	margin: 0 0 0 15px;
+}
+.set-alarm, .set-timer {
+	height: 38px;
+	width: 98px;
+	line-height: 40px;
+	text-align: center;
+	border: solid 1px #282c33;
+	border-radius: 3px;
+	cursor: pointer;
+	float: left;
+
+}
+.set-alarm:active {
+	opacity: .5;
+}
+
+.timer {
+	margin: 10px 0 0 0;
+}
+
+.time-panel select {
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	color: #fff;
+	width: auto;
+	background-color: #282c33;
+	font-size: 20px;
+	cursor: pointer;
+	float: left;
+	margin: 0 10px 0 0px;
+	border: solid 1px #282c33;
+	padding: 10px 30px 10px 10px;
+	line-height: 18px;
+	outline: none !important;
+	background-image: url('../images/down-arrow.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

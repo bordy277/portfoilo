@@ -110,6 +110,8 @@ $(document).ready(function(){
 	}
 
 	muter();
+	
+	$('#sound').html('<source src="sounds/ocean.mp3" type="audio/mpeg">');
 
 	$('.play').on('click', function(){
 		muted = false;

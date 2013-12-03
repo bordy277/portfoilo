@@ -77,7 +77,7 @@ $(document).ready(function(){
 	function getTheSound(meh) {
 
 		var sound = $(meh).val();
-		$('#sound').html('<source src="../sounds/'+sound+'.mp3" type="audio/mpeg">');
+		$('#sound').html('<source src="sounds/'+sound+'.mp3" type="audio/mpeg">');
 		$('.beach').css({'backgroundImage': 'url("images/'+sound+'.jpg")'});
 
 		

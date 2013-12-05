@@ -9,7 +9,7 @@ $(document).ready(function(){
 		$('#pgomn').hide();
 		$('#earthworks').hide();
 		$('#claires').hide();
-		$('#sirocco').hide();
+		$('#rh').hide();
 
 	});
 	
@@ -22,7 +22,7 @@ $(document).ready(function(){
 		$('#ff').hide();
 		$('#earthworks').hide();
 		$('#claires').hide();
-		$('#sirocco').hide();
+		$('#rh').hide();
 
 	});
 
@@ -35,7 +35,7 @@ $(document).ready(function(){
 		$('#pgomn').hide();
 		$('#earthworks').hide();
 		$('#claires').hide();
-		$('#sirocco').hide();
+		$('#rh').hide();
 
 	});
 
@@ -48,7 +48,7 @@ $(document).ready(function(){
 		$('#ff').hide();
 		$('#pgomn').hide();
 		$('#claires').hide();
-		$('#sirocco').hide();
+		$('#rh').hide();
 
 	});
 
@@ -61,7 +61,7 @@ $(document).ready(function(){
 		$('#pgomn').hide();
 		$('#earthworks').hide();
 		$('#claires').hide();
-		$('#sirocco').hide();
+		$('#rh').hide();
 
 	});
 
@@ -74,12 +74,12 @@ $(document).ready(function(){
 		$('#pgomn').hide();
 		$('#earthworks').hide();
 		$('#claires').hide();
-		$('#sirocco').hide();
+		$('#rh').hide();
 
 	});
 	$('.project.seven').click(function(){
 
-		$('#sirocco').toggle();
+		$('#rh').toggle();
 		$('#oven').hide();
 		$('#conservis').hide();
 		$('#sleepr').hide();
@@ -97,7 +97,7 @@ $(document).ready(function(){
 		$('#conservis').hide();
 		$('#sleepr').hide();
 		$('#ff').hide();
-		$('#sirocco').hide();
+		$('#rh').hide();
 		$('#pgomn').hide();
 		$('#earthworks').hide();
 
